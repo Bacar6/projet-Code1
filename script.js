@@ -89,8 +89,56 @@ window.addEventListener("scroll", () => {
 
 
 
-//REVIEW ------------------------------- Form Event ------------- 
+//REVIEW ------------------------------- Form Events ------------- 
 
+const inputName = document.querySelector('input[type="text"]');
+const select = document.querySelector("select")
+const form = document.querySelector("form");
+let pseudo = "";
+let language = "";
+
+
+inputName.addEventListener("input", (e) => {
+  pseudo = e.target.value;
+
+});
+
+select.addEventListener("input", (e) => {
+  language = e.target.value;
+});
+
+form.addEventListener("submit", () => {
+  e.preventDefault();
+
+  
+  if (cgv.checked) {
+  document.querySelector("form > div").innerHTML = `
+  <h3>Pseudo : ${pseudo}</h3>
+  <h4>Langage préféré : ${language}</h4>
+  `;
+  } else{
+    alert("Veuillez accepter les CGV");
+  }
+})
+
+//LINK - ------------------------ Load Event --------------------- 
+
+window.addEventListener("load", () => {
+  console.log("Document chargé  !!");
+})
+
+//SECTION --------------------------- ForEach-------------
+
+//const boxes = document.getElementsByClassName("box");
+const boxes = document.querySelectorAll(".box");
+
+console.log(boxes);
+
+boxes.forEach((box) => {
+  box.addEventListener("click", (e) => {
+    e.target.style.transform = "scale(0.7)";
+  })
+})
 
 
 
