@@ -138,15 +138,16 @@ boxes.forEach((box) => {
   box.addEventListener("click", (e) => {
     e.target.style.transform = "scale(0.7)";
   })
-})
+});
 
 
+//NOTE - -------------------------------------- addEventListener vs onclick ---------------------- 
+document.body.onclick = function () {
+  console.log("click 12");
+}
 
 
-
-
-
-
+console.log(navigator.userAgent);
 
 
 
