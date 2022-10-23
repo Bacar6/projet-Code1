@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@600;700;800&family=Oswald:wght@400;600&family=Teko&display=swap');
+
+body{
+ font-family: 'Karla';
+
+}
+
+.divBox{
+ background: 	#1e90ff; 
+ width: 200px;
+ min-height: 300px;
+ margin: 40px ;
+ padding: 1px;
+ border-radius: 15px;
+  
+}
+
+h1{
+  text-align: center;
+}
+
+
+nav, a{
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Teko', sans-serif; 
+}
+
+a{
+  height: 60px;
+  width: 60px;
+  background: red;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
