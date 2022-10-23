@@ -24,10 +24,11 @@ nav, a{
   text-decoration: none;
   text-align: center;
   letter-spacing: 1px;
-  font-family: 'Teko', sans-serif; 
+  font-family: 'Teko', sans-serif;
+  
 }
-
-a{
+/*
+a.active{
   height: 60px;
   width: 60px;
   background: red;
@@ -35,9 +36,20 @@ a{
   padding: 2px;
 }
 
+*/
+a:hover:not(.active) {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
 
+  padding: 5px;
+}
 
-
+nav{
+  padding: fixed;
+  top: 2px;
+  width: 100%;
+}
 
 
 
